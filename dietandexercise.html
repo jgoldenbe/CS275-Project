@@ -1,0 +1,134 @@
+<html>
+<head>
+	<title>Dieting and Exercise</title>
+	<script>
+	
+	</script>
+	<style>
+		td 
+		{
+			border: 2px solid black;
+		}
+		table 
+		{
+			border: 2px solid black;
+		}
+		ul 
+		{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333333;
+		}
+		
+		img 
+		{
+			width: 80px;
+			height: 50px;
+			float: left;
+		}
+
+		li
+		{
+			float: left;
+		}
+
+		li a 
+		{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 16px;
+			text-decoration: none;
+		}
+
+		li a:hover 
+		{
+			background-color: #111111;
+		}
+		
+		#exerciseCalculator 
+		{
+			float: left;
+			display: block;
+			padding: 20 px;
+			width: 200 px;
+			height: 200px;
+		}
+		
+		#info
+		{
+			display: block;
+			padding-left: 60 px;
+			width: 200 px;
+			height: 200 px;
+		}
+	</style>
+	<nav>
+		<img src="img/fitness.jfif">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="dietandexercise.html">Dieting and Exercise</a></li>
+			<li><a href="nutrition.html">Nutritional Info</a></li>
+			<li><a href="meal.html">Meal Planner</a></li>
+		</ul>
+	</nav>
+</head>
+<body>
+	
+	<div style="background-image: url('img/fitness.jfif');height:600px;width:1350px;background-size:1350px 600px;">
+	
+	<div id="exerciseCalculator">
+	
+	<form name="generalInfo">
+		<table>
+		<tr>
+			<td>Height:<input type="text" name="height" id="height"></td>
+		<tr>
+		</tr>
+			<td>Weight:<input type="text" name="weight" id="weight"></td>
+		</tr>
+		<tr>
+			<td>Sex:<br/><input type="checkbox" name="male" id="male" value="male">Male<input type="checkbox" name="female" id="female">Female<input type="checkbox" name="other" id="pther" value="other">Other</td>
+		</tr>
+		<tr>
+			<td>Desired Outcome:<br/><input type="checkbox" name="wloss" id="wloss" value="wloss">Weight Loss<input type="checkbox" name="bulk" id="bulk" value="bulk">Bulk Up<input type="checkbox" name="tone" id="tone" value="tone">Tone Muscle</td>
+		</tr>
+		<tr>
+			<td>Target Area:<br/><input type="checkbox" name="cardio" id="cardio" value="cardio">Cardio<input type="checkbox" name="legs" id="legs" value="legs">Lower Body<input type="checkbox" id="upper" name="upper" value="upper">Upper Body</td>
+		</tr>
+		<tr>
+			<td>
+			<button type="button" onclick="calculate(document.getElementById('height').value, document.getElementById('weight').value, document.getElementById('male').value,
+			document.getElementById('female').value, document.getElementById('other').value, document.getElementById('wloss').value, document.getElementById('bulk').value, 
+			document.getElementById('tone').value, document.getElementById('cardio').value, document.getElementById('legs').value, document.getElementById('upper').value);">Calculate</button>
+			</td>
+		</tr>
+		</table>
+	</form>
+	
+	<table>
+	<tr>
+		<td>Suggested Exercise Regiment</td>
+	</tr>
+	<tr>
+		<td><p id="calculationResult">Please input information above and push calculate to figure out your suggested exercise to pair with your diet.</p></td>
+	</tr>
+	</table>
+	
+	</div>
+	
+	<div id="info">
+	<p> 
+	"Float like a butterfly, sting like a bee. His hands can't hit what his eyes can't see. Now you see me, now you don't. George thinks he will, but I know he won't.
+	"Service to others is the rent you pay for your room here on earth."
+	"I'm young; I'm handsome; I'm fast. I can't possibly be beat."
+	"Don’t count the days; make the days count."
+	“If my mind can conceive it, and my heart can believe it—then I can achieve it." Jesse Jackson said this as early as 1983, according to the Associated Press, and Ali used it in his 2004 book.
+	</p>
+	</div>
+	
+	</div>
+</body>
+</html>
