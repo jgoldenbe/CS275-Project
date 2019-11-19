@@ -10,6 +10,7 @@ body {
    display: flex;
    flex-direction: column;
    position: relative;
+   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 td {
