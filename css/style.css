@@ -21,11 +21,6 @@ table {
    border: 2px solid black;
 }
 
-h1 {
-   margin: 0;
-   text-align: center;
-}
-
 .nav {
    list-style-type: none;
    margin: 0;
@@ -58,6 +53,28 @@ h1 {
    width: 100%;
    position: absolute;
    z-index: -1;
+}
+
+.homeButtonDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.homeh1, .homeh2 {
+  margin: 0;
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+.factsList {
+  display: flex;
+  justify-content: center;
+}
+
+.factsList li {
+  margin: 0 20px;
 }
 
 .img {
