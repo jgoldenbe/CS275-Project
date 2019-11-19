@@ -22,10 +22,18 @@
 			background-color: #333333;
 		}
 		
+		img 
+		{
+			width: 80px;
+			height: 50px;
+			float: left;
+		}
+
 		li
 		{
 			float: left;
 		}
+
 		li a 
 		{
 			display: block;
@@ -34,6 +42,7 @@
 			padding: 16px;
 			text-decoration: none;
 		}
+
 		li a:hover 
 		{
 			background-color: #111111;
@@ -56,11 +65,8 @@
 			height: 200 px;
 		}
 	</style>
-	<header>
-			<h1>Dieting and Exercise</h1>
-			</header>
 	<nav>
-	<a href="index.html"><img src="img/logo.jpg" alt="Logo"></a>
+		<img src="img/fitness.jfif">
 		<ul>
 			<li><a href="home.html">Home</a></li>
 			<li><a href="dietandexercise.html">Dieting and Exercise</a></li>
@@ -70,46 +76,18 @@
 	</nav>
 </head>
 <body>
-
+	
 	<div style="background-image: url('img/fitness.jfif');height:600px;width:1350px;background-size:1350px 600px;">
 	
 	<div id="exerciseCalculator">
 	
-	<form name="generalInfo">
-		<table>
-		<tr>
-			<td>Height:<input type="text" name="height" id="height"></td>
-		<tr>
-		</tr>
-			<td>Weight:<input type="text" name="weight" id="weight"></td>
-		</tr>
-		<tr>
-			<td>Sex:<br/><input type="checkbox" name="male" id="male" value="male">Male<input type="checkbox" name="female" id="female">Female<input type="checkbox" name="other" id="pther" value="other">Other</td>
-		</tr>
-		<tr>
-			<td>Desired Outcome:<br/><input type="checkbox" name="wloss" id="wloss" value="wloss">Weight Loss<input type="checkbox" name="bulk" id="bulk" value="bulk">Bulk Up<input type="checkbox" name="tone" id="tone" value="tone">Tone Muscle</td>
-		</tr>
-		<tr>
-			<td>Target Area:<br/><input type="checkbox" name="cardio" id="cardio" value="cardio">Cardio<input type="checkbox" name="legs" id="legs" value="legs">Lower Body<input type="checkbox" id="upper" name="upper" value="upper">Upper Body</td>
-		</tr>
-		<tr>
-			<td>
-			<button type="button" onclick="calculate(document.getElementById('height').value, document.getElementById('weight').value, document.getElementById('male').value,
-			document.getElementById('female').value, document.getElementById('other').value, document.getElementById('wloss').value, document.getElementById('bulk').value, 
-			document.getElementById('tone').value, document.getElementById('cardio').value, document.getElementById('legs').value, document.getElementById('upper').value);">Calculate</button>
-			</td>
-		</tr>
-		</table>
-	</form>
+	<h2>Excersie is very important</h2>
+
+	<p>Remeber diet is not the only thing needed to stay in shape, excercise is equally if not more 
+important. It is recommended to get at least 30 minutes of active movement in every day. For the best 
+results if trying to lose weight, cardio is the most effective method. For keeping tone, small weights and 
+core workouts are good.
 	
-	<table>
-	<tr>
-		<td>Suggested Exercise Regiment</td>
-	</tr>
-	<tr>
-		<td><p id="calculationResult">Please input information above and push calculate to figure out your suggested exercise to pair with your diet.</p></td>
-	</tr>
-	</table>
 	
 	</div>
 	
@@ -124,12 +102,5 @@
 	</div>
 	
 	</div>
-			<footer><small><p id="legal">
-      <a href="home.html">Home</a>&nbsp; &nbsp;
-      <a href="dietandexercise.html">Dieting and Exercise</a>&nbsp; &nbsp;
-      <a href="nutrition.html">Nutritional Info</a>&nbsp; &nbsp;
-      <a href="meal.html">Meal Plan</a>&nbsp; &nbsp;
-  
-		</small></p></footer>
 </body>
 </html>
