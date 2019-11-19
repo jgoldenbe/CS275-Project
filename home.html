@@ -4,7 +4,7 @@
      as lead to our main pages which are meal plan, and diet and excersize. -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="htmlMain">
 <head>
 
   <meta charset="UTF-8">
@@ -13,7 +13,7 @@
   <title>CS275-Project</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body style="margin: 0; padding: 0;">
+<body class="homeBody" style="margin: 0; padding: 0;">
    <header style="">
       <nav>
          <a href="home.html"><img class="logo" src="img/logo.png" alt="logo"></a>
@@ -25,9 +25,9 @@
          </ul>
       </nav>
    </header>
-   <main style="height: 600px;">
+   <main style="height: 200px;">
     <div>
-      <img src="img/hero.jpg" alt="Hero" style="width: 100%; position: absolute; z-index: -1;">
+      <img class="homeHero" src="img/hero.jpg" alt="Hero">
       <h1>Acheive A Healthy Goal, for a Healthy Life!</h1>
       <h2>Get your free Dieting and Exercise Plan Today!</h2>
       <ul>
@@ -50,12 +50,15 @@
     </div>
   </main>
 
-   <footer style="">
+   <footer>
       <div>
-         <a href="home.html">Home</a>&nbsp; &nbsp;
-         <a href="dietandexercise.html">Dieting and Exercise</a>&nbsp; &nbsp;
-         <a href="nutrition.html">Nutritional Info</a>&nbsp; &nbsp;
-         <a href="meal.html">Meal Plan</a>&nbsp; &nbsp;
+         <ul>
+            <li><h2 class="footerTitle">Navigation</h2></li>
+            <li><a class="footerItem" href="home.html">Home</a></li>
+            <li><a class="footerItem" href="dietandexercise.html">Dieting and Exercise</a></li>
+            <li><a class="footerItem" href="nutrition.html">Nutritional Info</a></li>
+            <li><a class="footerItem" href="meal.html">Meal Plan</a></li>
+         </ul>
       </div>
    </footer>
 </body>

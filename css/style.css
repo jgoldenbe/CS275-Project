@@ -1,6 +1,15 @@
+html {
+   overflow-x: hidden;
+   height: 100%;
+}
+
 body {
    padding: 0;
    margin: 0;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   position: relative;
 }
 
 td {
@@ -9,6 +18,11 @@ td {
 
 table {
    border: 2px solid black;
+}
+
+h1 {
+   margin: 0;
+   text-align: center;
 }
 
 .nav {
@@ -33,6 +47,16 @@ table {
 
 .navItem a:hover {
    background-color: #111;
+}
+
+.htmlMain {
+   overflow-y: hidden;
+}
+
+.homeHero {
+   width: 100%;
+   position: absolute;
+   z-index: -1;
 }
 
 .img {
@@ -80,19 +104,50 @@ li a:hover {
 .table {
    justify-content: center;
    display: flex;
+   margin-bottom: 200px;
 }
 
 #exerciseCalculator {
-   float: left;
-   display: block;
    padding: 20px;
-   width: 200px;
    height: 200px;
 }
 
 #info {
-   display: block;
    padding-left: 60px;
-   width: 200px;
    height: 200px;
+}
+
+footer {
+   position: absolute;
+   display: flex;
+   bottom: 0;
+   width: 100%;
+}
+
+footer div {
+   opacity: .7;
+   background-color: black;
+   width: 100%;
+}
+
+footer ul {
+   display: flex;
+   flex-direction: column;
+   padding: 0;
+   margin: 10px 20px;
+}
+
+.footerTitle {
+   margin: 10px 0;
+   color: white;
+}
+
+footer li {
+   padding: 5px;
+   list-style: none;
+}
+
+footer a {
+   text-decoration: none;
+   color: white;
 }
