@@ -1,42 +1,91 @@
-td 
-{
-  border: 2px solid black;
-}
-table 
-{
-  border: 2px solid black;
-}
-.nav 
-{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
+body {
+   padding: 0;
+   margin: 0;
 }
 
-.navItem
-{
-  float: left;
+td {
+   border: 2px solid black;
 }
 
-.navItem a 
-{
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
+table {
+   border: 2px solid black;
 }
 
-.navItem a:hover 
-{
-  background-color: #111111;
+.nav {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
 }
 
-.img 
-{
+.navItem {
+   float: left;
+}
+
+.navItem a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 16px;
+   text-decoration: none;
+}
+
+.navItem a:hover {
+   background-color: #111;
+}
+
+.img {
    width: 80px;
    height: 50px;
    float: left;
+}
+
+nav {
+   width: 100%;
+}
+
+.navList {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+}
+
+.logo {
+   width: 80px;
+   height: 50px;
+   float: left;
+}
+
+.listItem {
+   float: left;
+}
+
+.listItem a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 16px;
+   text-decoration: none;
+}
+
+li a:hover {
+   background-color: #111;
+}
+
+#exerciseCalculator {
+   float: left;
+   display: block;
+   padding: 20px;
+   width: 200px;
+   height: 200px;
+}
+
+#info {
+   display: block;
+   padding-left: 60px;
+   width: 200px;
+   height: 200px;
 }
