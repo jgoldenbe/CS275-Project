@@ -60,7 +60,7 @@ table {
   flex-direction: row;
   justify-content: space-evenly;
   text-align: center;
-  margin-top: 130px;
+  margin-top: 150px;
 }
 
 .homeh1, .homeh2 {
@@ -118,10 +118,15 @@ table {
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  list-style: none;
 }
 
 .factsList li {
   margin: 0 20px;
+  text-transform: uppercase;
 }
 
 .factsDiv {
