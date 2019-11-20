@@ -10,7 +10,7 @@ body {
    display: flex;
    flex-direction: column;
    position: relative;
-   font-family: "Helvetica Neue", Arial, sans-serif;
+   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 td {
@@ -45,10 +45,6 @@ table {
    background-color: #111;
 }
 
-.htmlMain {
-   overflow-y: hidden;
-}
-
 .homeHero {
    width: 100%;
    position: absolute;
@@ -56,86 +52,84 @@ table {
 }
 
 .homeButtonDiv {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  text-align: center;
-  margin-top: 150px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   text-align: center;
+   margin-top: 150px;
 }
 
-.homeh1, .homeh2 {
-  margin: 0;
-  padding: 20px 0 0 0;
-  text-align: center;
+.homeh1,
+.homeh2 {
+   margin: 0;
+   padding: 20px 0 0;
+   text-align: center;
 }
 
 .homeh1 {
-  padding-top: 20px;
-  padding-bottom: 10px;
+   padding-top: 20px;
+   padding-bottom: 10px;
 }
 
-.homeButtonDiv1, .homeButtonDiv2 {
-  background-color: white;
-  padding: 5px 15px 20px;
-  border-radius: 7px;
-  display: flex;
-  flex-direction: column;
+.homeButtonDiv1,
+.homeButtonDiv2 {
+   background-color: white;
+   padding: 5px 15px 20px;
+   border-radius: 7px;
+   display: flex;
+   flex-direction: column;
 }
 
-.homeButtonDiv1 a, .homeButtonDiv2 a {
-  background-color: #c8c8c8;
-  text-decoration: none;
-  color: black;
-  border-radius: 7px;
-  display: flex;
-  flex-direction: column;
-
-  border: none;
-  color: white;
-  padding: 13px 28px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 15px 20px;
-  transition-duration: 0.4s;
-  background-color: white;
-  color: black;
-  border: 2px solid #555555;
+.homeButtonDiv1 a,
+.homeButtonDiv2 a {
+   background-color: white;
+   color: black;
+   border-radius: 7px;
+   display: flex;
+   flex-direction: column;
+   padding: 13px 28px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 16px;
+   margin: 15px 20px;
+   transition-duration: .4s;
+   border: 2px solid #555;
 }
 
-.homeButtonDiv1 a:hover, .homeButtonDiv2 a:hover {
-  background-color: #555555;
-  color: white;
+.homeButtonDiv1 a:hover,
+.homeButtonDiv2 a:hover {
+   background-color: #555;
+   color: white;
 }
 
 .homeImgButton {
-  align-self: center;
-  width: 370px;
-  padding: 5px 20px 20px;
+   align-self: center;
+   width: 370px;
+   padding: 5px 20px 20px;
 }
 
 .factsList {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
-  list-style: none;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 60px;
+   font-size: 16px;
+   font-weight: 600;
+   text-align: center;
+   list-style: none;
 }
 
 .factsList li {
-  margin: 0 20px;
-  text-transform: uppercase;
+   margin: 0 20px;
+   text-transform: uppercase;
 }
 
 .factsDiv {
-  background-color: #ffffffc4;
-  margin: 0 390px 0px 400px;
-  border-radius: 15px;
-  padding-bottom: 1000px;
-  position: absolute;
-  z-index: -1;
+   background-color: #ffffffc4;
+   margin: 0 390px 0 400px;
+   border-radius: 15px;
+   padding-bottom: 720px;
+   position: absolute;
+   z-index: -1;
 }
 
 .img {
@@ -199,7 +193,7 @@ li a:hover {
 footer {
    position: absolute;
    display: flex;
-   bottom: 0;
+   bottom: -41vh;
    width: 100%;
 }
 
@@ -229,4 +223,16 @@ footer li {
 footer a {
    text-decoration: none;
    color: white;
+}
+
+.footer1 {
+   bottom: 0;
+}
+
+.footerTitle1 {
+   margin: 0;
+}
+
+.footerDiv1 {
+   width: 498%;
 }
