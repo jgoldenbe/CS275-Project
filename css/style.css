@@ -60,6 +60,7 @@ table {
   flex-direction: row;
   justify-content: space-evenly;
   text-align: center;
+  margin-top: 130px;
 }
 
 .homeh1, .homeh2 {
@@ -68,13 +69,68 @@ table {
   text-align: center;
 }
 
+.homeh1 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.homeButtonDiv1, .homeButtonDiv2 {
+  background-color: white;
+  padding: 5px 15px 20px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeButtonDiv1 a, .homeButtonDiv2 a {
+  background-color: #c8c8c8;
+  text-decoration: none;
+  color: black;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+
+  border: none;
+  color: white;
+  padding: 13px 28px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 15px 20px;
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.homeButtonDiv1 a:hover, .homeButtonDiv2 a:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.homeImgButton {
+  align-self: center;
+  width: 370px;
+  padding: 5px 20px 20px;
+}
+
 .factsList {
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .factsList li {
   margin: 0 20px;
+}
+
+.factsDiv {
+  background-color: #ffffffc4;
+  margin: 0 390px 0px 400px;
+  border-radius: 15px;
+  padding-bottom: 1000px;
+  position: absolute;
+  z-index: -1;
 }
 
 .img {
