@@ -9,42 +9,46 @@
 	</head>
 	<body style="padding: 0; margin: 0;">
 		<header style="">
-	      <nav>
-	         <a href="home.html"><img class="logo" src="img/logo.png" alt="logo"></a>
-	         <ul class="navList">
-	            <li class="listItem"><a href="home.html">Home</a></li>
-	            <li class="listItem"><a href="dietandexercise.html">Dieting and Exercise</a></li>
-	            <li class="listItem"><a href="nutrition.html">Nutritional Info</a></li>
-	            <li class="listItem"><a href="meal.html">Meal Planner</a></li>
-	         </ul>
-	      </nav>
-	   </header>
+			<nav>
+				<a href="home.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+				<ul class="navList">
+					<li class="listItem"><a href="home.html">Home</a></li>
+					<li class="listItem"><a href="dietandexercise.html">Dieting and     Exercise</a></li>
+					<li class="listItem"><a href="nutrition.html">Nutritional Info</a></li>
+					<li class="listItem"><a href="meal.html">Meal Planner</a></li>
+				</ul>
+			</nav>
+		</header>
 		<main>
 			<img src="img/hero.jpg" alt="Hero" style="width: 100%; position: absolute; z-index: -1;">
-				<div id="exerciseCalculator">
-					<h2>Exercise and Dieting</h2>
-					<p style="max-width: 80%;">Remeber diet is not the only thing needed to stay in shape, excercise is equally if not more important. It is recommended to get at least 30 minutes of active movement in every day. For the best results if trying to lose weight, cardio is the most effective method. For keeping tone, small weights and core workouts are good.</p>
-				</div>
-				<div id="info">
-					<p style="max-width: 80%; font-size: 30px; font-family: Times;">Combining exercise with a healthy diet is a more effective way to lose weight than depending on calorie restriction alone. Exercise can prevent or even reverse the effects of certain diseases. Exercise lowers blood pressure and cholesterol, which may prevent a heart attack.In addition, if you exercise, you lower your risk of developing certain types of cancers such as colon and breast cancer. Exercise is also known to help contribute to a sense of confidence and well-being, thus possibly lowering rates of anxiety and depression.Exercise is helpful for weight loss and maintaining weight loss. Exercise can increase metabolism, or how many calories you burn in a day. It can also help you maintain and increase lean body mass, which also helps increase number of calories you burn each day.</p>
-				</div>
+			<div id="exerciseCalculator">
+				<h1>Exercise and Dieting</h1>
+				<p style="max-width: 80%; font-size: 25px; font-family: Times;">Remeber: diet is not the only thing needed to stay in shape. Exercise is equally if not more important. It is recommended to get at least 30 minutes of active movement in every day. For the best results if trying to lose weight, cardio is the most effective method. For keeping tone, small weights and core workouts are good.</p>
+			</div>
+			<div id="info">
+				<p style="max-width: 80%; font-size: 25px; font-family: Times;">Combining exercise with a healthy diet is a more effective way to lose weight than depending on calorie restriction alone. Exercise can prevent or even reverse the effects of certain diseases. Exercise lowers blood pressure and cholesterol, which may prevent a heart attack.In addition, if you exercise, you lower your risk of developing certain types of cancers such as colon and breast cancer. Exercise is also known to help contribute to a sense of confidence and well-being, thus possibly lowering rates of anxiety and depression.Exercise is helpful for weight loss and maintaining weight loss. Exercise can increase metabolism, or how many calories you burn in a day. It can also help you maintain and increase lean body mass, which also helps increase number of calories you burn each day.</p>
+				<p style="max-width: 80%; font-size: 25px; font-family: Times;">Are you interested in knowing more about exercise, or exercise and training tips from our on-staff trainers?
+			</div>
+			<div id="formDiv">
+				<h2>Sign up for our Newsletter!</h2>
+				<form id="newsletterSignup">
+					<div style="margin: 10px;">
+						<p>Name:<input type="text" id="newsletterName">
+						<p>Age:<input type="number" id="newsletterAge">
+						<p>Email:<input type="text" id="newsletterEmail"><br>
+						<button type="button" onclick="checkEmail()" style="padding: 5px; margin-top: 10px;">Sign Up!</button>
+					</div>
+				</form>
+			</div>
 		</main>
 		<footer>
-	      <div class="footerDiv1">
+	      <div>
 	         <ul>
 	            <li><h2 class="footerTitle">Navigation</h2></li>
-	            <li class="footerItem"><a href="home.html">Home</a></li>
-	            <li class="footerItem"><a href="dietandexercise.html">Dieting and Exercise</a></li>
-	            <li class="footerItem"><a href="nutrition.html">Nutritional Info</a></li>
-	            <li class="footerItem"><a href="meal.html">Meal Plan</a></li>
-	         </ul>
-	      </div>
-	      <div class="footerDiv2">
-	         <ul>
-	            <li class="footerTitle footerTitle1"><h2>Contact</h2></li>
-	            <li class="footerItem"><a href="#">Email: test@gmail.com</a></li>
-	            <li class="footerItem"><a href="#">Phone: (111)-111-1111</a></li>
-	            <li class="footerItem"><a href="#">Address: 200 Bloomfield Ave West Hartford CT 06117</a></li>
+	            <li><a class="footerItem" href="home.html">Home</a></li>
+	            <li><a class="footerItem" href="dietandexercise.html">Dieting and Exercise</a></li>
+	            <li><a class="footerItem" href="nutrition.html">Nutritional Info</a></li>
+	            <li><a class="footerItem" href="meal.html">Meal Plan</a></li>
 	         </ul>
 	      </div>
 	   </footer>
