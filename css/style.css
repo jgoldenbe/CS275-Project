@@ -45,6 +45,10 @@ table {
    background-color: #111;
 }
 
+.htmlMain {
+   overflow-y: hidden;
+}
+
 .homeHero {
    width: 100%;
    position: absolute;
@@ -82,14 +86,14 @@ table {
 
 .homeButtonDiv1 a,
 .homeButtonDiv2 a {
-   background-color: white;
-   color: black;
+   background-color: #c8c8c8;
+   text-decoration: none;
    border-radius: 7px;
    display: flex;
    flex-direction: column;
+   color: white;
    padding: 13px 28px;
    text-align: center;
-   text-decoration: none;
    font-size: 16px;
    margin: 15px 20px;
    transition-duration: .4s;
@@ -112,7 +116,7 @@ table {
    display: flex;
    justify-content: center;
    margin-bottom: 60px;
-   font-size: 16px;
+   font-size: 18px;
    font-weight: 600;
    text-align: center;
    list-style: none;
@@ -127,7 +131,7 @@ table {
    background-color: #ffffffc4;
    margin: 0 390px 0 400px;
    border-radius: 15px;
-   padding-bottom: 720px;
+   padding-bottom: 1000px;
    position: absolute;
    z-index: -1;
 }
@@ -183,6 +187,7 @@ li a:hover {
 #exerciseCalculator {
    padding: 20px;
    height: 200px;
+   padding-left: 60px;
 }
 
 #info {
@@ -193,7 +198,7 @@ li a:hover {
 footer {
    position: absolute;
    display: flex;
-   bottom: -41vh;
+   bottom: -135px;
    width: 100%;
 }
 
@@ -225,14 +230,10 @@ footer a {
    color: white;
 }
 
-.footer1 {
-   bottom: 0;
-}
-
-.footerTitle1 {
-   margin: 0;
-}
-
-.footerDiv1 {
-   width: 498%;
+#formDiv {
+   margin: 120px 60px 60px;
+   width: 30%;
+   float: left;
+   border: 5px green solid;
+   border-radius: 5px;
 }
