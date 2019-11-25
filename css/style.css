@@ -45,10 +45,6 @@ table {
    background-color: #111;
 }
 
-.htmlMain {
-   overflow-y: hidden;
-}
-
 .homeHero {
    width: 100%;
    position: absolute;
@@ -116,7 +112,7 @@ table {
    display: flex;
    justify-content: center;
    margin-bottom: 60px;
-   font-size: 18px;
+   font-size: 16px;
    font-weight: 600;
    text-align: center;
    list-style: none;
@@ -198,8 +194,12 @@ li a:hover {
 footer {
    position: absolute;
    display: flex;
-   bottom: -135px;
+   bottom: -41vh;;
    width: 100%;
+}
+
+.footer1 {
+   bottom: -135px;
 }
 
 footer div {
@@ -228,6 +228,18 @@ footer li {
 footer a {
    text-decoration: none;
    color: white;
+}
+
+.footer1 {
+   bottom: 0;
+}
+
+.footerTitle1 {
+   margin: 0;
+}
+
+.footerDiv1 {
+   width: 498%;
 }
 
 #formDiv {
