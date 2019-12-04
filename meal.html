@@ -12,14 +12,12 @@
 				var activelevel = "";
 				var calories = 0;
 				var windowObjectReference;
-
 				if (/^[A-Za-z\s]+$/.test(document.getElementById('name').value)) {
 					if (document.getElementById('male').checked == true) {
 						gender = "Male";
 					} else if (document.getElementById('female').checked == true) {
 						gender = "Female";
 					}
-
 					if (document.getElementById('sedentary').selected == true) {
 						activelevel = "Sedentary";
 					} else if (document.getElementById('moderately-active').selected == true) {
@@ -27,7 +25,6 @@
 					} else if (document.getElementById('active').selected == true) {
 						activelevel = "Active";
 					}
-
 					if (gender == "Female" && (age >= 2 && age <= 3)  && activelevel == "Sedentary") {
 						calories = 1000;
 					} else if (gender == "Female" && (age >= 4 && age <= 8)  && activelevel == "Sedentary") {
@@ -51,7 +48,6 @@
 					} else if (gender == "Male" && (age >= 14 && age <= 18) && activelevel == "Active") {
 						calories = 3200;
 					}
-
 					if (calories == 1000) {
 						document.write("<main><img src='img/hero1.jpg' alt='Hero' style='width: 100%; position: absolute; z-index: -1;'/><hr />" +
 						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" + 
@@ -72,6 +68,102 @@
 						
 						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 1: </td><td style='border: solid 1px black;'>" + 
 						"Monday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Oatmeal, Apple slices" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Carot soup, Milk" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Granola" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"850" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 2: </td><td style='border: solid 1px black;'>" + 
+						"Tuesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Oatmeal, Apple slices" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Carot soup, Milk" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Granola" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"850" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 3: </td><td style='border: solid 1px black;'>" + 
+						"Wednesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Oatmeal, Apple slices" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Carot soup, Milk" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Granola" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"850" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 4: </td><td style='border: solid 1px black;'>" + 
+						"Thursday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Oatmeal, Apple slices" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Carot soup, Milk" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Granola" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"850" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 5: </td><td style='border: solid 1px black;'>" + 
+						"Friday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Oatmeal, Apple slices" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Carot soup, Milk" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Granola" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"850" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 6: </td><td style='border: solid 1px black;'>" + 
+						"Saturday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Oatmeal, Apple slices" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Carot soup, Milk" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Granola" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"850" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 7: </td><td style='border: solid 1px black;'>" + 
+						"Sunday" +  
 						"</td></tr>" +
 						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
 						"Oatmeal, Apple slices" +
@@ -117,6 +209,102 @@
 						"</td></tr>" + 
 						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
 						"1,113" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 2: </td><td style='border: solid 1px black;'>" + 
+						"Tuesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Bagel, Apple slices" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Pork, Tuna Salad" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Chicken and broccoli, Whole milk" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1,113" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 3: </td><td style='border: solid 1px black;'>" + 
+						"Wednesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Bagel, Apple slices" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Pork, Tuna Salad" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Chicken and broccoli, Whole milk" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1,113" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 4: </td><td style='border: solid 1px black;'>" + 
+						"Thursday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Bagel, Apple slices" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Pork, Tuna Salad" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Chicken and broccoli, Whole milk" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1,113" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 5: </td><td style='border: solid 1px black;'>" + 
+						"Friday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Bagel, Apple slices" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Pork, Tuna Salad" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Chicken and broccoli, Whole milk" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1,113" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 6: </td><td style='border: solid 1px black;'>" + 
+						"Saturday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Bagel, Apple slices" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Pork, Tuna Salad" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Chicken and broccoli, Whole milk" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1,113" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 7: </td><td style='border: solid 1px black;'>" + 
+						"Sunday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Bagel, Apple slices" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Pork, Tuna Salad" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Chicken and broccoli, Whole milk" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1,113" + 
 						"</td></tr><hr /></main>");
 					} else if (calories == 1400) {
 						document.write("<main><img src='img/hero1.jpg' alt='Hero' style='width: 100%; position: absolute; z-index: -1;'/><hr />" +
@@ -150,7 +338,104 @@
 						"</td></tr>" + 
 						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
 						"1342" + 
-						"</td></tr><hr /></main>");
+						"</td></tr><hr /></main>" + 
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 2: </td><td style='border: solid 1px black;'>" + 
+						"Tuesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Peanut butter banana toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Ham sandwich" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Chicken spinach salad, Ice cream" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1342" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 3: </td><td style='border: solid 1px black;'>" + 
+						"Wednesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Peanut butter banana toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Ham sandwich" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Chicken spinach salad, Ice cream" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1342" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 4: </td><td style='border: solid 1px black;'>" + 
+						"Thursday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Peanut butter banana toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Ham sandwich" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Chicken spinach salad, Ice cream" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1342" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 5: </td><td style='border: solid 1px black;'>" + 
+						"Friday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Peanut butter banana toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Ham sandwich" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Chicken spinach salad, Ice cream" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1342" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 6: </td><td style='border: solid 1px black;'>" + 
+						"Saturday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Peanut butter banana toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Ham sandwich" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Chicken spinach salad, Ice cream" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1342" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 7: </td><td style='border: solid 1px black;'>" + 
+						"Sunday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Peanut butter banana toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Ham sandwich" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Chicken spinach salad, Ice cream" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1342" + 
+						"</td></tr><hr /></main>" +
+						);
 					} else if (calories == 1600) {
 						document.write("<main><img src='img/hero1.jpg' alt='Hero' style='width: 100%; position: absolute; z-index: -1;'/><hr />" +
 						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" + 
@@ -171,6 +456,102 @@
 						
 						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 1: </td><td style='border: solid 1px black;'>" + 
 						"Monday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Bacon, Strawbeey yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Sausage, Red pepper soup" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Sweet potato fries, Beef pasta, salad" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1559" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 2: </td><td style='border: solid 1px black;'>" + 
+						"Tuesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Bacon, Strawbeey yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Sausage, Red pepper soup" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Sweet potato fries, Beef pasta, salad" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1559" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 3: </td><td style='border: solid 1px black;'>" + 
+						"Wednesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Bacon, Strawbeey yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Sausage, Red pepper soup" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Sweet potato fries, Beef pasta, salad" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1559" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 4: </td><td style='border: solid 1px black;'>" + 
+						"Thursday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Bacon, Strawbeey yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Sausage, Red pepper soup" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Sweet potato fries, Beef pasta, salad" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1559" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 5: </td><td style='border: solid 1px black;'>" + 
+						"Friday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Bacon, Strawbeey yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Sausage, Red pepper soup" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Sweet potato fries, Beef pasta, salad" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1559" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 6: </td><td style='border: solid 1px black;'>" + 
+						"Saturday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Bacon, Strawbeey yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Sausage, Red pepper soup" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Sweet potato fries, Beef pasta, salad" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1559" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 7: </td><td style='border: solid 1px black;'>" + 
+						"Sunday" +  
 						"</td></tr>" +
 						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
 						"Bacon, Strawbeey yogurt" +
@@ -204,6 +585,102 @@
 						
 						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 1: </td><td style='border: solid 1px black;'>" + 
 						"Monday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Banana Oatmeal" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Lemon peper tuna, 2 Carrots servings" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Pork chops, Strawberry toast" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1745" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 2: </td><td style='border: solid 1px black;'>" + 
+						"Tuesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Banana Oatmeal" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Lemon peper tuna, 2 Carrots servings" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Pork chops, Strawberry toast" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1745" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 3: </td><td style='border: solid 1px black;'>" + 
+						"Wednesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Banana Oatmeal" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Lemon peper tuna, 2 Carrots servings" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Pork chops, Strawberry toast" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1745" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 4: </td><td style='border: solid 1px black;'>" + 
+						"Thursday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Banana Oatmeal" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Lemon peper tuna, 2 Carrots servings" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Pork chops, Strawberry toast" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1745" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 5: </td><td style='border: solid 1px black;'>" + 
+						"Friday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Banana Oatmeal" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Lemon peper tuna, 2 Carrots servings" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Pork chops, Strawberry toast" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1745" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 6: </td><td style='border: solid 1px black;'>" + 
+						"Saturday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Banana Oatmeal" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"Lemon peper tuna, 2 Carrots servings" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Pork chops, Strawberry toast" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1745" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 7: </td><td style='border: solid 1px black;'>" + 
+						"Sunday" +  
 						"</td></tr>" +
 						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
 						"2 Banana Oatmeal" +
@@ -251,6 +728,102 @@
 						"</td></tr>" + 
 						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
 						"1922" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 2: </td><td style='border: solid 1px black;'>" + 
+						"Tuesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Cottage cheese, Yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Omelette with cheese, chocolate pudding" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Chicken begaels, 2 Green bean servings, Grapes fruit" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1922" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 3: </td><td style='border: solid 1px black;'>" + 
+						"Wednesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Cottage cheese, Yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Omelette with cheese, chocolate pudding" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Chicken begaels, 2 Green bean servings, Grapes fruit" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1922" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 4: </td><td style='border: solid 1px black;'>" + 
+						"Thursday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Cottage cheese, Yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Omelette with cheese, chocolate pudding" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Chicken begaels, 2 Green bean servings, Grapes fruit" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1922" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 5: </td><td style='border: solid 1px black;'>" + 
+						"Friday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Cottage cheese, Yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Omelette with cheese, chocolate pudding" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Chicken begaels, 2 Green bean servings, Grapes fruit" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1922" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 6: </td><td style='border: solid 1px black;'>" + 
+						"Saturday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Cottage cheese, Yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Omelette with cheese, chocolate pudding" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Chicken begaels, 2 Green bean servings, Grapes fruit" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1922" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 7: </td><td style='border: solid 1px black;'>" + 
+						"Sunday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"Cottage cheese, Yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Omelette with cheese, chocolate pudding" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Chicken begaels, 2 Green bean servings, Grapes fruit" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"1922" + 
 						"</td></tr><hr /></main>");
 					} else if (calories == 2200) {
 						document.write("<main><img src='img/hero1.jpg' alt='Hero' style='width: 100%; position: absolute; z-index: -1;'/><hr />" +
@@ -272,6 +845,102 @@
 						
 						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 1: </td><td style='border: solid 1px black;'>" + 
 						"Monday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Spinach, pepper, tomato scramble on toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Almond butter sandwich, Banana" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Mozzarella grilled cheese, 2 steam broccoli" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2226" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 2: </td><td style='border: solid 1px black;'>" + 
+						"Tuesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Spinach, pepper, tomato scramble on toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Almond butter sandwich, Banana" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Mozzarella grilled cheese, 2 steam broccoli" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2226" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 3: </td><td style='border: solid 1px black;'>" + 
+						"Wednesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Spinach, pepper, tomato scramble on toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Almond butter sandwich, Banana" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Mozzarella grilled cheese, 2 steam broccoli" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2226" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 4: </td><td style='border: solid 1px black;'>" + 
+						"Thursday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Spinach, pepper, tomato scramble on toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Almond butter sandwich, Banana" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Mozzarella grilled cheese, 2 steam broccoli" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2226" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 5: </td><td style='border: solid 1px black;'>" + 
+						"Friday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Spinach, pepper, tomato scramble on toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Almond butter sandwich, Banana" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Mozzarella grilled cheese, 2 steam broccoli" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2226" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 6: </td><td style='border: solid 1px black;'>" + 
+						"Saturday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Spinach, pepper, tomato scramble on toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Almond butter sandwich, Banana" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"Mozzarella grilled cheese, 2 steam broccoli" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2226" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 7: </td><td style='border: solid 1px black;'>" + 
+						"Sunday" +  
 						"</td></tr>" +
 						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
 						"2 Spinach, pepper, tomato scramble on toast" +
@@ -317,6 +986,102 @@
 						"</td></tr>" + 
 						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
 						"2407" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 2: </td><td style='border: solid 1px black;'>" + 
+						"Tuesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Scrambled eggs with pepper" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Tuna wraps" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Smoked sausage with pepper" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2407" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 3: </td><td style='border: solid 1px black;'>" + 
+						"Wednesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Scrambled eggs with pepper" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Tuna wraps" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Smoked sausage with pepper" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2407" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 4: </td><td style='border: solid 1px black;'>" + 
+						"Thursday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Scrambled eggs with pepper" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Tuna wraps" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Smoked sausage with pepper" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2407" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 5: </td><td style='border: solid 1px black;'>" + 
+						"Friday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Scrambled eggs with pepper" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Tuna wraps" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Smoked sausage with pepper" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2407" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 6: </td><td style='border: solid 1px black;'>" + 
+						"Saturday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Scrambled eggs with pepper" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Tuna wraps" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Smoked sausage with pepper" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2407" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 7: </td><td style='border: solid 1px black;'>" + 
+						"Sunday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Scrambled eggs with pepper" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Tuna wraps" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Smoked sausage with pepper" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2407" + 
 						"</td></tr><hr /></main>");
 					} else if (calories == 2600) {
 						document.write("<main><img src='img/hero1.jpg' alt='Hero' style='width: 100%; position: absolute; z-index: -1;'/><hr />" +
@@ -338,6 +1103,102 @@
 						
 						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 1: </td><td style='border: solid 1px black;'>" + 
 						"Monday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Vanilla banana milkshake" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Cottage cheese with tuna, 2 banana ice cream" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Grilled steak with pepper, coconut yogurt" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2610" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 2: </td><td style='border: solid 1px black;'>" + 
+						"Tuesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Vanilla banana milkshake" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Cottage cheese with tuna, 2 banana ice cream" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Grilled steak with pepper, coconut yogurt" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2610" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 3: </td><td style='border: solid 1px black;'>" + 
+						"Wednesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Vanilla banana milkshake" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Cottage cheese with tuna, 2 banana ice cream" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Grilled steak with pepper, coconut yogurt" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2610" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 4: </td><td style='border: solid 1px black;'>" + 
+						"Thursday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Vanilla banana milkshake" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Cottage cheese with tuna, 2 banana ice cream" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Grilled steak with pepper, coconut yogurt" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2610" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 5: </td><td style='border: solid 1px black;'>" + 
+						"Friday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Vanilla banana milkshake" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Cottage cheese with tuna, 2 banana ice cream" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Grilled steak with pepper, coconut yogurt" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2610" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 6: </td><td style='border: solid 1px black;'>" + 
+						"Saturday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Vanilla banana milkshake" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Cottage cheese with tuna, 2 banana ice cream" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Grilled steak with pepper, coconut yogurt" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2610" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 7: </td><td style='border: solid 1px black;'>" + 
+						"Sunday" +  
 						"</td></tr>" +
 						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
 						"2 Vanilla banana milkshake" +
@@ -383,6 +1244,102 @@
 						"</td></tr>" + 
 						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
 						"2798" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 2: </td><td style='border: solid 1px black;'>" + 
+						"Tuesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Oregano eggs, 2 fruit salad" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Barbercue tuna sandwich, yogurt and strawberry " + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"3 Balsamic chicken with spinach" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2798" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 3: </td><td style='border: solid 1px black;'>" + 
+						"Wednesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Oregano eggs, 2 fruit salad" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Barbercue tuna sandwich, yogurt and strawberry " + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"3 Balsamic chicken with spinach" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2798" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 4: </td><td style='border: solid 1px black;'>" + 
+						"Thursday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Oregano eggs, 2 fruit salad" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Barbercue tuna sandwich, yogurt and strawberry " + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"3 Balsamic chicken with spinach" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2798" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 5: </td><td style='border: solid 1px black;'>" + 
+						"Friday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Oregano eggs, 2 fruit salad" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Barbercue tuna sandwich, yogurt and strawberry " + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"3 Balsamic chicken with spinach" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2798" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 6: </td><td style='border: solid 1px black;'>" + 
+						"Saturday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Oregano eggs, 2 fruit salad" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Barbercue tuna sandwich, yogurt and strawberry " + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"3 Balsamic chicken with spinach" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2798" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 7: </td><td style='border: solid 1px black;'>" + 
+						"Sunday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Oregano eggs, 2 fruit salad" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Barbercue tuna sandwich, yogurt and strawberry " + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"3 Balsamic chicken with spinach" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2798" + 
 						"</td></tr><hr /></main>");
 					} else if (calories == 3000) {
 						document.write("<main><img src='img/hero1.jpg' alt='Hero' style='width: 100%; position: absolute; z-index: -1;'/><hr />" +
@@ -404,6 +1361,102 @@
 						
 						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 1: </td><td style='border: solid 1px black;'>" + 
 						"Monday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Oatmeal cheese pancake, 2 buttered toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Corn tuna salad, 2 peanut butter and celery" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Ham and cheese sandwiches, toast with tomato and hummus" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2960" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 2: </td><td style='border: solid 1px black;'>" + 
+						"Tuesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Oatmeal cheese pancake, 2 buttered toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Corn tuna salad, 2 peanut butter and celery" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Ham and cheese sandwiches, toast with tomato and hummus" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2960" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 3: </td><td style='border: solid 1px black;'>" + 
+						"Wednesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Oatmeal cheese pancake, 2 buttered toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Corn tuna salad, 2 peanut butter and celery" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Ham and cheese sandwiches, toast with tomato and hummus" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2960" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 4: </td><td style='border: solid 1px black;'>" + 
+						"Thursday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Oatmeal cheese pancake, 2 buttered toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Corn tuna salad, 2 peanut butter and celery" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Ham and cheese sandwiches, toast with tomato and hummus" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2960" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 5: </td><td style='border: solid 1px black;'>" + 
+						"Friday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Oatmeal cheese pancake, 2 buttered toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Corn tuna salad, 2 peanut butter and celery" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Ham and cheese sandwiches, toast with tomato and hummus" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2960" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 6: </td><td style='border: solid 1px black;'>" + 
+						"Saturday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Oatmeal cheese pancake, 2 buttered toast" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Corn tuna salad, 2 peanut butter and celery" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Ham and cheese sandwiches, toast with tomato and hummus" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"2960" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 7: </td><td style='border: solid 1px black;'>" + 
+						"Sunday" +  
 						"</td></tr>" +
 						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
 						"2 Oatmeal cheese pancake, 2 buttered toast" +
@@ -449,11 +1502,105 @@
 						"</td></tr>" + 
 						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
 						"3213" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 2: </td><td style='border: solid 1px black;'>" + 
+						"Tuesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Egg salad sandwiches, 2 Greek yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Apple yogurt snack, 2 carrots and hummus" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Grilled chicken teriyaki, 3 green bean servings" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"3213" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 3: </td><td style='border: solid 1px black;'>" + 
+						"Wednesday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Egg salad sandwiches, 2 Greek yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Apple yogurt snack, 2 carrots and hummus" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Grilled chicken teriyaki, 3 green bean servings" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"3213" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 4: </td><td style='border: solid 1px black;'>" + 
+						"Thursday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Egg salad sandwiches, 2 Greek yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Apple yogurt snack, 2 carrots and hummus" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Grilled chicken teriyaki, 3 green bean servings" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"3213" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 5: </td><td style='border: solid 1px black;'>" + 
+						"Friday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Egg salad sandwiches, 2 Greek yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Apple yogurt snack, 2 carrots and hummus" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Grilled chicken teriyaki, 3 green bean servings" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"3213" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 6: </td><td style='border: solid 1px black;'>" + 
+						"Saturday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Egg salad sandwiches, 2 Greek yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Apple yogurt snack, 2 carrots and hummus" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Grilled chicken teriyaki, 3 green bean servings" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"3213" + 
+						"</td></tr><hr /></main>" +
+						
+						"<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Day 7: </td><td style='border: solid 1px black;'>" + 
+						"Sunday" +  
+						"</td></tr>" +
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Breakfast: </td><td style='border: solid 1px black;'>" + 
+						"2 Egg salad sandwiches, 2 Greek yogurt" +
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Lunch: </td><td style='border: solid 1px black;'>" + 
+						"2 Apple yogurt snack, 2 carrots and hummus" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Dinner: </td><td style='border: solid 1px black;'>" + 
+						"2 Grilled chicken teriyaki, 3 green bean servings" + 
+						"</td></tr>" + 
+						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
+						"3213" + 
 						"</td></tr><hr /></main>");
 					}
-
 					// alert(fullname + " " + gender + " " + age + " " + activelevel + " " + calories);
-
 				} else {
 					alert("Invalid name! Please re-enter name and try again.")
 				}
