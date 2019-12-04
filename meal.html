@@ -29,7 +29,7 @@
 		</script>
 	</head>
 	<body style="margin: 0; padding: 0;">
-		<header style="">
+		<header>
 			<nav>
 				<a href="home.html"><img class="logo" src="img/logo.png" alt="logo"></a>
 				<ul class="navList">
@@ -59,8 +59,10 @@
 						<option value="moderately-active">Moderately Active</option>
 						<option value="active">Active</option>
 					</select>
-				<button onClick="calculate(this.form)">Generate Plan</button>
-				<button onClick="resetVal()" value="">Reset</button>
+				<div>
+					<button onClick="calculate(this.form)">Generate Plan</button>
+					<button onClick="resetVal()" value="">Reset</button>
+				</div>
 			</form>
 			<hr>
 		</main>
