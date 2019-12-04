@@ -37,7 +37,7 @@
 						calories = 2000;
 					} else if ((gender == "Female" && (age >= 31 && age <= 50)  && activelevel == "Active") || ((gender == "Male" && (age >= 14 && age<=18) && activelevel == "Sedentary")) || ((gender == "Male" && (age >= 31 && age<=50) && activelevel == "Sedentary")) || (gender == "Female" && (age >= 19 && age <= 30)  && activelevel == "Moderately Active")) {
 						calories = 2200;
-					} else if ((gender == "Female" && (age >= 14 && age <= 18)  && activelevel == "Active") || ((gender == "Female" && (age >= 19 && age<=30) && activelevel == "Active")) || ((gender == "Male" && (age >= 19 && age<=30) && activelevel == "Sedentary"))) {
+					} else if ((gender == "Female" && (age >= 14 && age <= 18)  && activelevel == "Active") || ((gender == "Female" && (age >= 19 && age<=30) && activelevel == "Active")) || ((gender == "Male" && (age >= 19 && age<=30) && activelevel == "Sedentary")) ||(gender == "Male" && age > 50 && activelevel == "Moderately Active")) {
 						calories = 2400;
 					} else if ((gender == "Male" && (age >= 9 && age <= 13) && activelevel == "Active") || (gender == "Male" && (age >= 31 && age <= 50) && activelevel == "Moderately Active")) {
 						calories = 2600;
@@ -434,7 +434,7 @@
 						"</td></tr>" + 
 						"<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories total: </td><td style='border: solid 1px black;'>" + 
 						"1342" + 
-						"</td></tr><hr /></main>" +
+						"</td></tr><hr /></main>"
 						);
 					} else if (calories == 1600) {
 						document.write("<main><img src='img/hero1.jpg' alt='Hero' style='width: 100%; position: absolute; z-index: -1;'/><hr />" +
