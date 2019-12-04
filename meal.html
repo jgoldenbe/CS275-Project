@@ -6,9 +6,14 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script>
 			function calculate() {
-				var fullname = document.getElementById('name').innerText;
+				var fullname = document.getElementById('name').value;
+				var gender = "";
 
-				alert(fullname);
+				if (document.getElementById('male').checked == true) {
+					gender = "Male";
+				} else {
+					gender = "Female";
+				}
 			}
 		</script>
 	</head>
