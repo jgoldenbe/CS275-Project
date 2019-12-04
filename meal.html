@@ -10,6 +10,7 @@
 				var gender = "";
 				var age = document.getElementById('age').value;
 				var activelevel = "";
+				var calories = "";
 
 				if (/^[A-Za-z\s]+$/.test(document.getElementById('name').value)) {
 					if (document.getElementById('male').checked == true) {
@@ -26,7 +27,13 @@
 						activelevel = "Active";
 					}
 
-					alert(fullname + " " + gender + " " + age + " " + activelevel);
+					if (gender == female && (age >= 2 && age <= 3)  && activelevel == "Sedentary") {
+						calories = "1000";
+					} else if (gender == female && (age >= 4 && age <= 8)  && activelevel == "Sedentary") {
+						calories = "1200";
+					} else if ((gender == female && (age >= 9 && age <= 13)  && activelevel == "Sedentary") || (gender == female && age >= 51 && activelevel == "Sedentary")) {
+						calories = "1600";
+					}
 
 				} else {
 					alert("Invalid name! Please re-enter name and try again.")
@@ -40,7 +47,7 @@
 				<a href="home.html"><img class="logo" src="img/logo.png" alt="logo"></a>
 				<ul class="navList">
 					<li class="listItem"><a href="home.html">Home</a></li>
-					<li class="listItem"><a href="dietandexercise.html">Dieting and     Exercise</a></li>
+					<li class="listItem"><a href="dietandexercise.html">Dieting and Exercise</a></li>
 					<li class="listItem"><a href="nutrition.html">Nutritional Info</a></li>
 					<li class="listItem"><a href="meal.html">Meal Planner</a></li>
 				</ul>
