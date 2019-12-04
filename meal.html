@@ -5,8 +5,6 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script>
-			var activelevel = "";
-
 			function calculate() {
 				var fullname = document.getElementById('name').value;
 				var gender = "";
@@ -20,11 +18,11 @@
 						gender = "Female";
 					}
 
-					if (document.getElementById('sedentary').checked == true) {
+					if (document.getElementById('sedentary').selected == true) {
 						activelevel = "Sedentary";
-					} else if (document.getElementById('moderately-active').checked == true) {
-						active = "Moderately Active";
-					} else if (document.getElementById('active').checked == true) {
+					} else if (document.getElementById('moderately-active').selected == true) {
+						activelevel = "Moderately Active";
+					} else if (document.getElementById('active').selected == true) {
 						activelevel = "Active";
 					}
 
