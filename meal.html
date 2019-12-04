@@ -38,39 +38,44 @@
 						calories = 1800;
 					} else if ((gender == "female" && (age >= 14 && age <= 18)  && activelevel == "Moderately Active") || (gender == "female" && (age >= 19 && age <= 30)  && activelevel == "Sedentary") || (gender == "female" && (age >= 31 && age <= 50)  && activelevel == "Moderately Active") || (gender == "male" && (age >= 51)  && activelevel == "Sedentary")) {
 						calories = 2000;
-					}
-					else if ((gender == female && (age >= 31 && age <= 50)  && activelevel == "Active") || ((gender == male && (age >= 14 && age<=18) && activelevel == "Sedentary")) || ((gender == male && (age >= 31 && age<=50) && activelevel == "Sedentary"))) {
+					} else if ((gender == female && (age >= 31 && age <= 50)  && activelevel == "Active") || ((gender == male && (age >= 14 && age<=18) && activelevel == "Sedentary")) || ((gender == male && (age >= 31 && age<=50) && activelevel == "Sedentary"))) {
 						calories = 2200;
-					}
-					
-					else if ((gender == female && (age >= 14 && age <= 18)  && activelevel == "Active") || ((gender == female && (age >= 19 && age<=30) && activelevel == "Active")) || ((gender == male && (age >= 19 && age<=30) && activelevel == "Sedentary"))) {
+					} else if ((gender == female && (age >= 14 && age <= 18)  && activelevel == "Active") || ((gender == female && (age >= 19 && age<=30) && activelevel == "Active")) || ((gender == male && (age >= 19 && age<=30) && activelevel == "Sedentary"))) {
 						calories = 2400;
+					} else if ((gender == male && (age >= 9 && age <= 13) && activelevel == "Active") || (gender == male && (age >= 31 && age <= 50) && activelevel == "Moderately Active")) {
+						calories = 2600;
+					} else if ((gender == male && (age >= 14 && age <= 30) && activelevel == "Moderately Active") || (gender == male && (age > 50) && activelevel == "Active")) {
+						calories = 2800;
+					} else if (gender == male && (age >= 19 && age <= 50) && activelevel == "Active") {
+						calories = 3000;
+					} else if (gender == male && (age >= 14 && age <= 18) && activelevel == "Active") {
+						calories = 3200;
 					}
 
 					if (calories == 1000) {
-						
+
 					} else if (calories == 1200) {
-						
+
 					} else if (calories == 1400) {
-						
+
 					} else if (calories == 1600) {
-						
+
 					} else if (calories == 1800) {
-						
+
 					} else if (calories == 2000) {
-						
+
 					} else if (calories == 2200) {
-						
+
 					} else if (calories == 2400) {
-						
+
 					} else if (calories == 2600) {
-						
+
 					} else if (calories == 2800) {
-						
+
 					} else if (calories == 3000) {
-						
+
 					} else if (calories == 3200) {
-						
+
 					}
 
 				} else {
