@@ -7,41 +7,30 @@
 		<script>
 			var activelevel = "";
 
-			function activeLevel() {
-				if (document.getElementById('sedentary').checked == true) {
-					activelevel = "Sedentary";
-				} else if (document.getElementById('moderately-active').checked == true) {
-					active = "Moderately Active";
-				} else if (document.getElementById('active').checked == true) {
-					activelevel = "Active";
-				}
-				return activelevel;
-			}
-
 			function calculate() {
 				var fullname = document.getElementById('name').value;
 				var gender = "";
 				var age = document.getElementById('age').value;
-				activeLevel();
+				var activelevel = "";
 
-				if (/^[A-Za-z\s]+$/.test(document.getElementById('name').value))
-				{
-					var fullname = document.getElementById('name').value;
-					var gender = "";
-					var age = document.getElementById('age').value;
-					var activelevel = "";
-
+				if (/^[A-Za-z\s]+$/.test(document.getElementById('name').value)) {
 					if (document.getElementById('male').checked == true) {
 						gender = "Male";
 					} else if (document.getElementById('female').checked == true) {
 						gender = "Female";
 					}
 
-				alert(fullname + " " + gender + " " + age + " " + activelevel);
+					if (document.getElementById('sedentary').checked == true) {
+						activelevel = "Sedentary";
+					} else if (document.getElementById('moderately-active').checked == true) {
+						active = "Moderately Active";
+					} else if (document.getElementById('active').checked == true) {
+						activelevel = "Active";
+					}
 
-				}
-				else
-				{
+					alert(fullname + " " + gender + " " + age + " " + activelevel);
+
+				} else {
 					alert("Invalid name! Please re-enter name and try again.")
 				}
 			}
@@ -74,9 +63,9 @@
 					<input type="number" id="age">
 				<p>Active Level
 					<select name="active-select">
-						<option value="sedentary">Sedentary</option>
-						<option value="moderately-active">Moderately Active</option>
-						<option value="active">Active</option>
+						<option id="sedentary">Sedentary</option>
+						<option id="moderately-active">Moderately Active</option>
+						<option id="active">Active</option>
 					</select>
 				<div>
 					<button onClick="calculate(this.form)">Generate Plan</button>
