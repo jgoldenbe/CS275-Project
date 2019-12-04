@@ -32,13 +32,13 @@
 						calories = 1000;
 					} else if (gender == "Female" && (age >= 4 && age <= 8)  && activelevel == "Sedentary") {
 						calories = 1200;
-					} else if ((gender == "Female" && (age >= 9 && age <= 13)  && activelevel == "Sedentary") || (gender == "Female" && age >= 51 && activelevel == "Sedentary")) {
+					} else if ((gender == "Female" && (age >= 9 && age <= 13)  && activelevel == "Sedentary") || (gender == "Female" && age >= 51 && activelevel == "Sedentary") || (gender == "Female" && (age >= 4 && age <= 8) && activelevel == "Moderately Active")) {
 						calories = 1600;
-					} else if ((gender == "Female" && (age >= 14 && age <= 18)  && activelevel == "Sedentary") || (gender == "Female" && (age >= 31 && age <= 50)  && activelevel == "Sedentary") || (gender == "Female" && (age >= 51)  && activelevel == "Moderately Active") || (gender == "Male" && (age >= 14 && age <= 18)  && activelevel == "Sedentary")) {
+					} else if ((gender == "Female" && (age >= 9 && age <= 18)  && activelevel == "Sedentary") || (gender == "Female" && (age >= 31 && age <= 50)  && activelevel == "Sedentary") || (gender == "Female" && (age >= 51)  && activelevel == "Moderately Active") || (gender == "Male" && (age >= 14 && age <= 18)  && activelevel == "Sedentary")) {
 						calories = 1800;
 					} else if ((gender == "Female" && (age >= 14 && age <= 18)  && activelevel == "Moderately Active") || (gender == "Female" && (age >= 19 && age <= 30)  && activelevel == "Sedentary") || (gender == "Female" && (age >= 31 && age <= 50)  && activelevel == "Moderately Active") || (gender == "Male" && (age >= 51)  && activelevel == "Sedentary")) {
 						calories = 2000;
-					} else if ((gender == "Female" && (age >= 31 && age <= 50)  && activelevel == "Active") || ((gender == "Male" && (age >= 14 && age<=18) && activelevel == "Sedentary")) || ((gender == "Male" && (age >= 31 && age<=50) && activelevel == "Sedentary"))) {
+					} else if ((gender == "Female" && (age >= 31 && age <= 50)  && activelevel == "Active") || ((gender == "Male" && (age >= 14 && age<=18) && activelevel == "Sedentary")) || ((gender == "Male" && (age >= 31 && age<=50) && activelevel == "Sedentary")) || (gender == "Female" && (age >= 19 && age <= 30)  && activelevel == "Moderately Active")) {
 						calories = 2200;
 					} else if ((gender == "Female" && (age >= 14 && age <= 18)  && activelevel == "Active") || ((gender == "Female" && (age >= 19 && age<=30) && activelevel == "Active")) || ((gender == "Male" && (age >= 19 && age<=30) && activelevel == "Sedentary"))) {
 						calories = 2400;
