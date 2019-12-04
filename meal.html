@@ -5,11 +5,24 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script>
+			var activelevel = "";
+
+			function activeLevel() {
+				if (document.getElementById('sedentary').checked == true) {
+					activelevel = "Sedentary";
+				} else if (document.getElementById('moderately-active').checked == true) {
+					active = "Moderately Active";
+				} else if (document.getElementById('active').checked == true) {
+					activelevel = "Active";
+				}
+				return activelevel;
+			}
+
 			function calculate() {
 				var fullname = document.getElementById('name').value;
 				var gender = "";
 				var age = document.getElementById('age').value;
-				var activelevel = "";
+				activeLevel();
 
 				if (document.getElementById('male').checked == true) {
 					gender = "Male";
@@ -17,13 +30,7 @@
 					gender = "Female";
 				}
 
-				if (document.getElementById('sedentary').checked == true) {
-					activeLevel = "Sedentary";
-				} else if (document.getElementById('moderately-active').checked == true) {
-					activeLevel = "Moderately Active";
-				} else if (document.getElementById('active').checked == true) {
-					activeLevel = "Active";
-				}
+				alert(fullname + " " + gender + " " + age + " " + activelevel);
 			}
 
 		</script>
@@ -54,7 +61,7 @@
 				<p>Age: 
 					<input type="number" id="age">
 				<p>Active Level 
-					<select name="active-select">
+					<select name="active-select" onChange="activeLevel()">
 						<option value="sedentary">Sedentary</option>
 						<option value="moderately-active">Moderately Active</option>
 						<option value="active">Active</option>
