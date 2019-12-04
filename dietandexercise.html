@@ -2,9 +2,39 @@
 <html lang="en">
 	<head>
 		<title>Dieting and Exercise</title>
-		
+
 	   <link rel="stylesheet" type="text/css" href="css/style.css">
 		<script>
+		function validate()
+		{
+			if (/^[0-9]+$/.test(newsletterSignup.newsletterAge.value))
+			{
+				if (/^[A-Za-z\s]+$/.test(newsletterSignup.newsletterName.value))
+				{
+					if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(newsletterSignup.newsletterEmail.value))
+					{
+						alert("Hi " + newsletterSignup.newsletterName.value + " age " + newsletterSignup.newsletterAge.value + "! Your email: " + newsletterSignup.newsletterEmail.value + " has been added to our mailing list!");
+						newsletterSignup.reset();
+						return true;
+					}
+					else
+					{
+						alert("That email address is invalid! Please re-enter.");
+						return false;
+					}
+				}
+				else
+				{
+						alert("That name is invalid! Please re-enter.");
+						return false;
+				}
+			}
+			else
+			{
+				alert("That age is invalid! Please re-enter.");
+				return false;
+			}
+		}
 		</script>
 	</head>
 	<body style="padding: 0; margin: 0;">
@@ -36,7 +66,7 @@
 						<p>Name:<input type="text" id="newsletterName">
 						<p>Age:<input type="number" id="newsletterAge">
 						<p>Email:<input type="text" id="newsletterEmail"><br>
-						<button type="button" onclick="checkEmail()" style="padding: 5px; margin-top: 10px;">Sign Up!</button>
+						<button type="button" onclick="validate()" style="padding: 5px; margin-top: 10px;">Sign Up!</button>
 					</div>
 				</form>
 			</div>
