@@ -24,15 +24,27 @@
 				var age = document.getElementById('age').value;
 				activeLevel();
 
-				if (document.getElementById('male').checked == true) {
-					gender = "Male";
-				} else if (document.getElementById('female').checked == true) {
-					gender = "Female";
-				}
+				if (/^[A-Za-z\s]+$/.test(document.getElementById('name').value))
+				{
+					var fullname = document.getElementById('name').value;
+					var gender = "";
+					var age = document.getElementById('age').value;
+					var activelevel = "";
+
+					if (document.getElementById('male').checked == true) {
+						gender = "Male";
+					} else if (document.getElementById('female').checked == true) {
+						gender = "Female";
+					}
 
 				alert(fullname + " " + gender + " " + age + " " + activelevel);
-			}
 
+				}
+				else
+				{
+					alert("Invalid name! Please re-enter name and try again.")
+				}
+			}
 		</script>
 	</head>
 	<body style="margin: 0; padding: 0;">
@@ -53,15 +65,15 @@
 			<h2>Use this tool to make a meal plan</h2>
 			<hr>
 			<form>
-				<p>Name: 
+				<p>Name:
 					<input type="text" id="name">
-				<p>Sex: 
-					<input type="radio" id="male"> Male 
+				<p>Sex:
+					<input type="radio" id="male"> Male
 					<input type="radio" id="female"> Female
-				<p>Age: 
+				<p>Age:
 					<input type="number" id="age">
-				<p>Active Level 
-					<select name="active-select" onChange="activeLevel()">
+				<p>Active Level
+					<select name="active-select">
 						<option value="sedentary">Sedentary</option>
 						<option value="moderately-active">Moderately Active</option>
 						<option value="active">Active</option>
