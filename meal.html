@@ -10,7 +10,7 @@
 				var gender = "";
 				var age = document.getElementById('age').value;
 				var activelevel = "";
-				var calories = "";
+				var calories = 0;
 
 				if (/^[A-Za-z\s]+$/.test(document.getElementById('name').value)) {
 					if (document.getElementById('male').checked == true) {
@@ -28,15 +28,15 @@
 					}
 
 					if (gender == "female" && (age >= 2 && age <= 3)  && activelevel == "Sedentary") {
-						calories = "1000";
+						calories = 1000;
 					} else if (gender == "female" && (age >= 4 && age <= 8)  && activelevel == "Sedentary") {
-						calories = "1200";
+						calories = 1200;
 					} else if ((gender == "female" && (age >= 9 && age <= 13)  && activelevel == "Sedentary") || (gender == "female" && age >= 51 && activelevel == "Sedentary")) {
-						calories = "1600";
+						calories = 1600;
 					} else if ((gender == "female" && (age >= 14 && age <= 18)  && activelevel == "Sedentary") || (gender == "female" && (age >= 31 && age <= 50)  && activelevel == "Sedentary") || (gender == "female" && (age >= 51)  && activelevel == "Moderately Active") || (gender == "male" && (age >= 14 && age <= 18)  && activelevel == "Sedentary")) {
-						calories = "1800";
+						calories = 1800;
 					} else if ((gender == "female" && (age >= 14 && age <= 18)  && activelevel == "Moderately Active") || (gender == "female" && (age >= 19 && age <= 30)  && activelevel == "Sedentary") || (gender == "female" && (age >= 31 && age <= 50)  && activelevel == "Moderately Active") || (gender == "male" && (age >= 51)  && activelevel == "Sedentary")) {
-						calories = "2000";
+						calories = 2000;
 					}
 
 				} else {
