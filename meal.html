@@ -4,6 +4,9 @@
 		<title>Meal Planner</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script>
+			
+		</script>
 	</head>
 	<body style="margin: 0; padding: 0;">
 		<header style="">
@@ -22,6 +25,7 @@
 			<hr>
 			<h2>Use this tool to make a meal plan</h2>
 			<hr>
+			<form action="">
 			<p>Name: 
 				<input type="text" id="name">
 			<p>Sex: 
@@ -35,8 +39,9 @@
 					<option value="moderately-active">Moderately Active</option>
 					<option value="active">Active</option>
 				</select>
-			<input type="button" onclick="calculate()" value="Generate Plan">
-		 	<input type="button" onclick="resetVal()" value="Reset">
+			</form>
+			<input type="button" onclick="calculate(this.form)" value="Generate Plan">
+			 <input type="button" onclick="resetVal()" value="Reset">
 			<hr>
 		</main>
 		<footer class="footer1">
