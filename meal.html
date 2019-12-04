@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script>
-			
+			function 
 		</script>
 	</head>
 	<body style="margin: 0; padding: 0;">
@@ -25,23 +25,23 @@
 			<hr>
 			<h2>Use this tool to make a meal plan</h2>
 			<hr>
-			<form action="">
-			<p>Name: 
-				<input type="text" id="name">
-			<p>Sex: 
-				<input type="radio" id="male"> Male 
-				<input type="radio" id="female"> Female
-			<p>Age: 
-				<input type="number" id="age">
-			<p>Active Level 
-				<select name="active-select">
-					<option value="sedentary">Sedentary</option>
-					<option value="moderately-active">Moderately Active</option>
-					<option value="active">Active</option>
-				</select>
+			<form>
+				<p>Name: 
+					<input type="text" id="name">
+				<p>Sex: 
+					<input type="radio" id="male"> Male 
+					<input type="radio" id="female"> Female
+				<p>Age: 
+					<input type="number" id="age">
+				<p>Active Level 
+					<select name="active-select">
+						<option value="sedentary">Sedentary</option>
+						<option value="moderately-active">Moderately Active</option>
+						<option value="active">Active</option>
+					</select>
+				<button onClick="calculate(this.form)">Generate Plan</button>
+				<button onClick="resetVal()" value="">Reset</button>
 			</form>
-			<input type="button" onclick="calculate(this.form)" value="Generate Plan">
-			 <input type="button" onclick="resetVal()" value="Reset">
 			<hr>
 		</main>
 		<footer class="footer1">
