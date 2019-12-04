@@ -8,13 +8,24 @@
 			function calculate() {
 				var fullname = document.getElementById('name').value;
 				var gender = "";
+				var age = document.getElementById('age').value;
+				var activelevel = "";
 
 				if (document.getElementById('male').checked == true) {
 					gender = "Male";
 				} else if (document.getElementById('female').checked == true) {
 					gender = "Female";
 				}
+
+				if (document.getElementById('sedentary').checked == true) {
+					activeLevel = "Sedentary";
+				} else if (document.getElementById('moderately-active').checked == true) {
+					activeLevel = "Moderately Active";
+				} else if (document.getElementById('active').checked == true) {
+					activeLevel = "Active";
+
 			}
+
 		</script>
 	</head>
 	<body style="margin: 0; padding: 0;">
