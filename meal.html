@@ -27,12 +27,14 @@
 						activelevel = "Active";
 					}
 
-					if (gender == female && (age >= 2 && age <= 3)  && activelevel == "Sedentary") {
+					if (gender == "female" && (age >= 2 && age <= 3)  && activelevel == "Sedentary") {
 						calories = "1000";
-					} else if (gender == female && (age >= 4 && age <= 8)  && activelevel == "Sedentary") {
+					} else if (gender == "female" && (age >= 4 && age <= 8)  && activelevel == "Sedentary") {
 						calories = "1200";
-					} else if ((gender == female && (age >= 9 && age <= 13)  && activelevel == "Sedentary") || (gender == female && age >= 51 && activelevel == "Sedentary")) {
+					} else if ((gender == "female" && (age >= 9 && age <= 13)  && activelevel == "Sedentary") || (gender == "female" && age >= 51 && activelevel == "Sedentary")) {
 						calories = "1600";
+					} else if ((gender == "female" && (age >= 14 && age <= 18)  && activelevel == "Sedentary") || (gender == "female" && (age >= 31 && age <= 50)  && activelevel == "Sedentary") || (gender == "female" && (age >= 51)  && activelevel == "Moderately Active") || (gender == "male" && (age >= 14 && age <= 18)  && activelevel == "Sedentary")) {
+						calories = "1800"
 					}
 
 				} else {
