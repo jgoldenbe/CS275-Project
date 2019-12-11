@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Meal Planner</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+	<body style="margin: 0; padding: 0;">
+		<header>
+			<nav>
+				<a href="home.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+				<ul class="navList">
+					<li class="listItem"><a href="home.html">Home</a></li>
+					<li class="listItem"><a href="dietandexercise.html">Dieting and Exercise</a></li>
+					<li class="listItem"><a href="nutrition.html">Nutritional Info</a></li>
+					<li class="listItem"><a href="meal.html">Meal Planner</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<img src="img/hero1.jpg" alt="Hero" style="width: 100%; position: absolute; z-index: -1;">
+			<hr>
+			<h2>Use this tool to make a meal plan</h2>
+			<hr>
+				<p>Name:
+					<input type="text" id="name">
+				<p>Sex:
+					<input type="radio" id="male"> Male
+					<input type="radio" id="female"> Female
+				<p>Age:
+					<input type="number" id="age">
+				<p>Active Level
+					<select name="active-select">
+						<option id="sedentary">Sedentary</option>
+						<option id="moderately-active">Moderately Active</option>
+						<option id="active">Active</option>
+					</select>
+				<div>
+					<button onClick="calculate()">Generate Plan</button>
+					<button onClick="resetVal()" value="">Reset</button>
+				</div>
+			<div id="plan">
+			</div>
+			<hr>
+		</main>
+		<footer class="footer1">
+	      <div class="footerDiv1">
+	         <ul>
+	            <li><h2 class="footerTitle">Navigation</h2></li>
+	            <li class="footerItem"><a href="home.html">Home</a></li>
+	            <li class="footerItem"><a href="dietandexercise.html">Dieting and Exercise</a></li>
+	            <li class="footerItem"><a href="nutrition.html">Nutritional Info</a></li>
+	            <li class="footerItem"><a href="meal.html">Meal Plan</a></li>
+	         </ul>
+	      </div>
+	      <div class="footerDiv2">
+	         <ul>
+	            <li class="footerTitle footerTitle1"><h2>Contact</h2></li>
+	            <li class="footerItem"><a href="#">Email: test@gmail.com</a></li>
+	            <li class="footerItem"><a href="#">Phone: (111)-111-1111</a></li>
+	            <li class="footerItem"><a href="#">Address: 200 Bloomfield Ave West Hartford CT 06117</a></li>
+	         </ul>
+	      </div>
+	   </footer>
+	</body>
+
+</html>

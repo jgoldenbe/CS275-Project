@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meal Planner</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script>
+      function calculate() {
+        var fullname = document.getElementById("name").value;
+        var gender = "";
+        var age = document.getElementById("age").value;
+        var activelevel = "";
+        var calories = 0;
+        var windowObjectReference;
+
+        if (/^[A-Za-z\s]+$/.test(document.getElementById("name").value)) {
+          if (document.getElementById("male").checked == true) {
+            gender = "Male";
+          } else if (document.getElementById("female").checked == true) {
+            gender = "Female";
+          }
+
+          if (document.getElementById("sedentary").selected == true) {
+            activelevel = "Sedentary";
+          } else if (
+            document.getElementById("moderately-active").selected == true
+          ) {
+            activelevel = "Moderately Active";
+          } else if (document.getElementById("active").selected == true) {
+            activelevel = "Active";
+          }
+
+          if (
+            gender == "Female" &&
+            age >= 2 && age <= 3 &&
+            activelevel == "Sedentary"
+          ) {
+            calories = 1000;
+          } else if (
+            gender == "Female" &&
+            age >= 4 && age <= 8 &&
+            activelevel == "Sedentary"
+          ) {
+            calories = 1200;
+          } else if (
+            (gender == "Female" &&
+              age >= 9 && age <= 13 &&
+              activelevel == "Sedentary") ||
+            (gender == "Female" && age >= 51 && activelevel == "Sedentary")
+          ) {
+            calories = 1600;
+          } else if (
+            (gender == "Female" &&
+              age >= 14 && age <= 18 &&
+              activelevel == "Sedentary") ||
+            (gender == "Female" &&
+              age >= 31 && age <= 50 &&
+              activelevel == "Sedentary") ||
+            (gender == "Female" &&
+              age >= 51 &&
+              activelevel == "Moderately Active") ||
+            (gender == "Male" &&
+              age >= 14 && age <= 18 &&
+              activelevel == "Sedentary")
+          ) {
+            calories = 1800;
+          } else if (
+            (gender == "Female" &&
+              age >= 14 && age <= 18 &&
+              activelevel == "Moderately Active") ||
+            (gender == "Female" &&
+              age >= 19 && age <= 30 &&
+              activelevel == "Sedentary") ||
+            (gender == "Female" &&
+              age >= 31 && age <= 50 &&
+              activelevel == "Moderately Active") ||
+            (gender == "Male" && age >= 51 && activelevel == "Sedentary")
+          ) {
+            calories = 2000;
+          } else if (
+            (gender == "Female" &&
+              age >= 31 && age <= 50 &&
+              activelevel == "Active") ||
+            (gender == "Male" &&
+              age >= 14 && age <= 18 &&
+              activelevel == "Sedentary") ||
+            (gender == "Male" &&
+              age >= 31 && age <= 50 &&
+              activelevel == "Sedentary")
+          ) {
+            calories = 2200;
+          } else if (
+            (gender == "Female" &&
+              age >= 14 && age <= 18 &&
+              activelevel == "Active") ||
+            (gender == "Female" &&
+              age >= 19 && age <= 30 &&
+              activelevel == "Active") ||
+            (gender == "Male" &&
+              age >= 19 && age <= 30 &&
+              activelevel == "Sedentary")
+          ) {
+            calories = 2400;
+          } else if (
+            (gender == "Male" &&
+              age >= 9 && age <= 13 &&
+              activelevel == "Active") ||
+            (gender == "Male" &&
+              age >= 31 && age <= 50 &&
+              activelevel == "Moderately Active")
+          ) {
+            calories = 2600;
+          } else if (
+            (gender == "Male" &&
+              age >= 14 && age <= 30 &&
+              activelevel == "Moderately Active") ||
+            (gender == "Male" && age > 50 && activelevel == "Active")
+          ) {
+            calories = 2800;
+          } else if (
+            gender == "Male" &&
+            age >= 19 && age <= 50 &&
+            activelevel == "Active"
+          ) {
+            calories = 3000;
+          } else if (
+            gender == "Male" &&
+            age >= 14 && age <= 18 &&
+            activelevel == "Active"
+          ) {
+            calories = 3200;
+          }
+
+          if (calories == 1000) {
+          } else if (calories == 1200) {
+            document.write(
+              "<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" +
+                fullname +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Gender: </td><td style='border: solid 1px black;'>" +
+                gender +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Age: </td><td style='border: solid 1px black;'>" +
+                age +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Active Level: </td><td style='border: solid 1px black;'>" +
+                activelevel +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories Needed: </td><td style='border: solid 1px black;'>" +
+                calories +
+                "</td></tr>"
+            );
+          } else if (calories == 1400) {
+            document.write(
+              "<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" +
+                fullname +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Gender: </td><td style='border: solid 1px black;'>" +
+                gender +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Age: </td><td style='border: solid 1px black;'>" +
+                age +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Active Level: </td><td style='border: solid 1px black;'>" +
+                activelevel +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories Needed: </td><td style='border: solid 1px black;'>" +
+                calories +
+                "</td></tr>"
+            );
+          } else if (calories == 1600) {
+            document.write(
+              "<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" +
+                fullname +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Gender: </td><td style='border: solid 1px black;'>" +
+                gender +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Age: </td><td style='border: solid 1px black;'>" +
+                age +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Active Level: </td><td style='border: solid 1px black;'>" +
+                activelevel +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories Needed: </td><td style='border: solid 1px black;'>" +
+                calories +
+                "</td></tr>"
+            );
+          } else if (calories == 1800) {
+            document.write(
+              "<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" +
+                fullname +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Gender: </td><td style='border: solid 1px black;'>" +
+                gender +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Age: </td><td style='border: solid 1px black;'>" +
+                age +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Active Level: </td><td style='border: solid 1px black;'>" +
+                activelevel +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories Needed: </td><td style='border: solid 1px black;'>" +
+                calories +
+                "</td></tr>"
+            );
+          } else if (calories == 2000) {
+            document.write(
+              "<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" +
+                fullname +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Gender: </td><td style='border: solid 1px black;'>" +
+                gender +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Age: </td><td style='border: solid 1px black;'>" +
+                age +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Active Level: </td><td style='border: solid 1px black;'>" +
+                activelevel +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories Needed: </td><td style='border: solid 1px black;'>" +
+                calories +
+                "</td></tr>"
+            );
+          } else if (calories == 2200) {
+            document.write(
+              "<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" +
+                fullname +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Gender: </td><td style='border: solid 1px black;'>" +
+                gender +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Age: </td><td style='border: solid 1px black;'>" +
+                age +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Active Level: </td><td style='border: solid 1px black;'>" +
+                activelevel +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories Needed: </td><td style='border: solid 1px black;'>" +
+                calories +
+                "</td></tr>"
+            );
+          } else if (calories == 2400) {
+            document.write(
+              "<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" +
+                fullname +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Gender: </td><td style='border: solid 1px black;'>" +
+                gender +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Age: </td><td style='border: solid 1px black;'>" +
+                age +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Active Level: </td><td style='border: solid 1px black;'>" +
+                activelevel +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories Needed: </td><td style='border: solid 1px black;'>" +
+                calories +
+                "</td></tr>"
+            );
+          } else if (calories == 2600) {
+            document.write(
+              "<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" +
+                fullname +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Gender: </td><td style='border: solid 1px black;'>" +
+                gender +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Age: </td><td style='border: solid 1px black;'>" +
+                age +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Active Level: </td><td style='border: solid 1px black;'>" +
+                activelevel +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories Needed: </td><td style='border: solid 1px black;'>" +
+                calories +
+                "</td></tr>"
+            );
+          } else if (calories == 2800) {
+            document.write(
+              "<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" +
+                fullname +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Gender: </td><td style='border: solid 1px black;'>" +
+                gender +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Age: </td><td style='border: solid 1px black;'>" +
+                age +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Active Level: </td><td style='border: solid 1px black;'>" +
+                activelevel +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories Needed: </td><td style='border: solid 1px black;'>" +
+                calories +
+                "</td></tr>"
+            );
+          } else if (calories == 3000) {
+            document.write(
+              "<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" +
+                fullname +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Gender: </td><td style='border: solid 1px black;'>" +
+                gender +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Age: </td><td style='border: solid 1px black;'>" +
+                age +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Active Level: </td><td style='border: solid 1px black;'>" +
+                activelevel +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories Needed: </td><td style='border: solid 1px black;'>" +
+                calories +
+                "</td></tr>"
+            );
+          } else if (calories == 3200) {
+            document.write(
+              "<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" +
+                fullname +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Gender: </td><td style='border: solid 1px black;'>" +
+                gender +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Age: </td><td style='border: solid 1px black;'>" +
+                age +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Active Level: </td><td style='border: solid 1px black;'>" +
+                activelevel +
+                "</td></tr>" +
+                "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Calories Needed: </td><td style='border: solid 1px black;'>" +
+                calories +
+                "</td></tr>"
+            );
+          }
+
+          // alert(fullname + " " + gender + " " + age + " " + activelevel + " " + calories);
+        } else {
+          alert("Invalid name! Please re-enter name and try again.");
+        }
+      }
+    </script>
+  </head>
+  <body style="margin: 0; padding: 0;">
+    <header>
+      <nav>
+        <a href="home.html"
+          ><img class="logo" src="img/logo.png" alt="logo"
+        /></a>
+        <ul class="navList">
+          <li class="listItem"><a href="home.html">Home</a></li>
+          <li class="listItem">
+            <a href="dietandexercise.html">Dieting and Exercise</a>
+          </li>
+          <li class="listItem">
+            <a href="nutrition.html">Nutritional Info</a>
+          </li>
+          <li class="listItem"><a href="meal.html">Meal Planner</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <img
+        src="img/hero1.jpg"
+        alt="Hero"
+        style="width: 100%; position: absolute; z-index: -1;"
+      />
+      <hr />
+
+      <hr />
+    </main>
+    <footer class="footer1">
+      <div class="footerDiv1">
+        <ul>
+          <li><h2 class="footerTitle">Navigation</h2></li>
+          <li class="footerItem"><a href="home.html">Home</a></li>
+          <li class="footerItem">
+            <a href="dietandexercise.html">Dieting and Exercise</a>
+          </li>
+          <li class="footerItem">
+            <a href="nutrition.html">Nutritional Info</a>
+          </li>
+          <li class="footerItem"><a href="meal.html">Meal Plan</a></li>
+        </ul>
+      </div>
+      <div class="footerDiv2">
+        <ul>
+          <li class="footerTitle footerTitle1"><h2>Contact</h2></li>
+          <li class="footerItem"><a href="#">Email: test@gmail.com</a></li>
+          <li class="footerItem"><a href="#">Phone: (111)-111-1111</a></li>
+          <li class="footerItem">
+            <a href="#">Address: 200 Bloomfield Ave West Hartford CT 06117</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
