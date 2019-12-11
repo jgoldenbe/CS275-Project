@@ -38,8 +38,8 @@ function calculate() {
         } else if (sex == "Female" && (age >= 4 && age <= 8)  && activelevel == "Sedentary") {
             calories = 1200;
             breakfast = ["Bagel, Apple slices", "Oatmeal cookies",  "Yogurt Smoothie", "Banana Pudding"];
-            lunch = ["Pork, Tuna Salad", ];
-            dinner = ["Chicken and broccoli, Whole milk"];
+            lunch = ["Pork, Tuna Salad", "Tomato Basil Soup", "Baked Mac and Cheese"];
+            dinner = ["Chicken and broccoli, Whole milk", "Sausage Egg Rolls", "Sweet Potato Bowl"];
         } else if ((sex == "Female" && (age >= 9 && age <= 13)  && activelevel == "Sedentary") || (sex == "Female" && age >= 51 && activelevel == "Sedentary") || (sex == "Female" && (age >= 4 && age <= 8) && activelevel == "Moderately Active")) {
             calories = 1600;
             breakfast = ["Peanut butter banana toast", "Coconut muffin", "Chocolate chips cookies"];
